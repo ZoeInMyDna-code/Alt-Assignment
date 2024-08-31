@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20;
+    background-color: #ffffff;
+}
+
+header {
+    width: 100%;
+    background-color: #00d1ed;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+    display: block;
+}
+
+.container {
+    display: flex;
+    height: calc(100vh - 50px);
+    flex-wrap: wrap;
+}
+
+.image {
+    width: 45%;
+    background-color: #FFFCF8;
+    background-image: url("media/Alt school form page image.png");
+    background-repeat: no-repeat;
+    background-size: 65% 50%;
+    background-position: 40% 10% ;
+    position: relative;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.image p {
+    position: absolute;
+    font-size: 15px;
+    bottom: 50px;
+    color: #000000;
+    text-align: center;
+    margin-left: 25%;
+}
+.image h1 {
+    position: absolute ;
+    bottom: 100px;
+    left: 15%;
+    color: #000000;
+    font-size: 50px;
+    max-width: 70%;
+    text-align: center;
+    line-height: 130%;
+
+}
+
+.form-container {
+    width: 50%;
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    position: center;
+}
+
+.form-container h1 {
+    font-size: 40px;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-group {
+    flex: 1;
+    min-width: 43%;
+    margin-bottom: 15px;
+    margin-right: 10px;
+}
+
+.form-group-full {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+input, select {
+    width: 100%;
+    padding: 15px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    background-color: #FAFAFA;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    transition: border 0.01s linear;
+}
+ input:hover {
+    border: 1px solid #0ca7f5; 
+}
+
+input[type="submit"] {
+    background-color: #3841ef;
+    color: white;
+    padding: 15px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%; 
+}
+input[type="submit"]:hover {
+    background-color: #42428e; 
+}
+
+.form-group:last-child {
+    margin-right: 0;
+}
+
+@media (max-width: 1024px) {
+    .image h1 {
+        font-size: 40px;
+        left: 10%;
+        max-width: 80%;
+    }
+
+    .image p {
+        font-size: 14px;
+        margin-left: 20%;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .image {
+        display: none;
+    }
+
+    .form-container {
+        width: 100%;
+    }
+
+    .form-group {
+        min-width: 100%;
+    }
+}
+
+
